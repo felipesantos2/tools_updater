@@ -1,0 +1,15 @@
+[Unit]
+Description=Cli Tools Updater
+Wants=network-online.target
+After=network.target
+
+[Service]
+User=user
+
+WorkingDirectory=/home/felipesantos2/projects/tools_updater/
+
+ExecStart=/bin/bash /home/felipesantos2/projects/tools_updater/cli-tools-up.sh
+
+RemainAfterExit=yes
+StandardOutput=journal
+StandardError=journal
