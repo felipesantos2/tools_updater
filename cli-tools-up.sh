@@ -12,7 +12,7 @@ codex update
 agy update
 
 
-base_value=$(cat log.txt)
-(( counter = $base_value + 1))
+value=$(cat log.txt)
+(( counter = $value + 1))
 echo $counter > log.txt
 
